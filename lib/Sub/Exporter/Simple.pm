@@ -15,6 +15,8 @@ sub import {
     return setup_exporter( { exports => [ @subs ], into_level => 1 } );
 }
 
+1;
+
 
 __END__
 =pod
@@ -76,8 +78,6 @@ a bug before the first release.
 Please report any bugs or feature requests through the web interface at
 L<http://rt.cpan.org>. I will be notified, and then you'll automatically be
 notified of progress on your bug as I make changes.
-
-1;
 
 =head1 AUTHOR
 
