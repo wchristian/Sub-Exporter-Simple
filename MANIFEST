@@ -5,7 +5,6 @@ META.json
 META.yml
 Makefile.PL
 README
-autosave.win
 dist.ini
 lib/Sub/Exporter/Simple.pm
 t/basic.t
