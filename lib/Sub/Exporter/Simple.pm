@@ -6,7 +6,8 @@ package Sub::Exporter::Simple;
 use Sub::Exporter 'setup_exporter';
 
 sub import {
-    setup_exporter( { exports => [ @_ ], into_level => 1 } );
+    my ( $self, @subs ) = @_;
+    return setup_exporter( { exports => [ @subs ], into_level => 1 } );
 }
 
 1;
