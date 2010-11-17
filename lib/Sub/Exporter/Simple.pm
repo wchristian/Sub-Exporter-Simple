@@ -14,7 +14,7 @@ sub import {
 
 1;
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
 In your module:
 
@@ -32,7 +32,7 @@ In your target:
 
     function1();
 
-=head2 DESCRIPTION
+=head1 DESCRIPTION
 
 This module is basically just a macro for:
 
@@ -53,7 +53,7 @@ That's all it does.
 It does not expose any other functionality of L<Sub::Exporter> and never will. If you need more than this, use the real
 thing.
 
-=head2 THANKS
+=head1 THANKS
 
 Thanks to rjbs for writing the excellent L<Sub::Exporter> and providing some input for this module, as well as catching
 a bug before the first release.
