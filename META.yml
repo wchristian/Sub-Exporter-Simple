@@ -24,7 +24,7 @@ requires:
   Sub::Exporter: 0
 resources:
   repository: http://github.com/wchristian/Sub-Exporter-Simpler.git
-version: 1.103200
+version: 1.103210
 x_Dist_Zilla:
   plugins:
     -

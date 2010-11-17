@@ -47,7 +47,7 @@
          "web" : "http://github.com/wchristian/Sub-Exporter-Simpler"
       }
    },
-   "version" : "1.103200",
+   "version" : "1.103210",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

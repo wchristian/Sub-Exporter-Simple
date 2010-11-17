@@ -3,7 +3,7 @@ use warnings;
 
 package Sub::Exporter::Simple;
 BEGIN {
-  $Sub::Exporter::Simple::VERSION = '1.103200';
+  $Sub::Exporter::Simple::VERSION = '1.103210';
 }
 
 # ABSTRACT: just export some subs
@@ -27,9 +27,9 @@ Sub::Exporter::Simple - just export some subs
 
 =head1 VERSION
 
-version 1.103200
+version 1.103210
 
-=head2 SYNOPSIS
+=head1 SYNOPSIS
 
 In your module:
 
@@ -47,28 +47,23 @@ In your target:
 
     function1();
 
-=head2 DESCRIPTION
+=head1 DESCRIPTION
 
 This module is basically just a macro for:
 
     use Sub::Exporter -setup => { exports => [ qw( function1 function2 function3 ) ] };
 
 I made it because i found myself in the situation of wanting to simply export some subs in a number of modules, but not
-wanting to use L<Exporter>, since L<Sub::Exporter> offers a nicer API.
-
-However the default way of just exporting some plain subs in Sub::Exporter is a bit cumbersome to type (especially
-repeatedly) and does not look very clean either. (As far as typing effort goes, please do consider that [] and friends
-are often AltGr affairs in non-american layouts.)
-
+wanting to use L<Exporter>, since L<Sub::Exporter> offers a nicer API. However the default way of just exporting some
+plain subs in Sub::Exporter is a bit cumbersome to type (especially repeatedly) and does not look very clean either.
+(As far as typing effort goes, please do consider that [] and friends are often AltGr affairs in non-american layouts.)
 So this module just acts as a macro for that functionality and reduces the amount of needed typing, while making things
 look more clean.
 
-That's all it does.
+That's all it does. It does not expose any other functionality of L<Sub::Exporter> and never will. If you need more than
+this, use the real thing.
 
-It does not expose any other functionality of L<Sub::Exporter> and never will. If you need more than this, use the real
-thing.
-
-=head2 THANKS
+=head1 THANKS
 
 Thanks to rjbs for writing the excellent L<Sub::Exporter> and providing some input for this module, as well as catching
 a bug before the first release.
