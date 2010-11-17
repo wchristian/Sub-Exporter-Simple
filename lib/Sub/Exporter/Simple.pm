@@ -39,19 +39,14 @@ This module is basically just a macro for:
     use Sub::Exporter -setup => { exports => [ qw( function1 function2 function3 ) ] };
 
 I made it because i found myself in the situation of wanting to simply export some subs in a number of modules, but not
-wanting to use L<Exporter>, since L<Sub::Exporter> offers a nicer API.
-
-However the default way of just exporting some plain subs in Sub::Exporter is a bit cumbersome to type (especially
-repeatedly) and does not look very clean either. (As far as typing effort goes, please do consider that [] and friends
-are often AltGr affairs in non-american layouts.)
-
+wanting to use L<Exporter>, since L<Sub::Exporter> offers a nicer API. However the default way of just exporting some
+plain subs in Sub::Exporter is a bit cumbersome to type (especially repeatedly) and does not look very clean either.
+(As far as typing effort goes, please do consider that [] and friends are often AltGr affairs in non-american layouts.)
 So this module just acts as a macro for that functionality and reduces the amount of needed typing, while making things
 look more clean.
 
-That's all it does.
-
-It does not expose any other functionality of L<Sub::Exporter> and never will. If you need more than this, use the real
-thing.
+That's all it does. It does not expose any other functionality of L<Sub::Exporter> and never will. If you need more than
+this, use the real thing.
 
 =head1 THANKS
 
